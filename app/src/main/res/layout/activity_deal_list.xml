@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kexincom.cbpm.DealListActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:id="@+id/relativeLayout"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:background="@android:color/black">
+
+        <ImageButton
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:id="@+id/webpage_back"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="操作记录"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/webpage_back"
+            android:layout_toRightOf="@+id/webpage_back"
+            android:layout_toLeftOf="@+id/DealList_btn2"
+            android:layout_toStartOf="@+id/DealList_btn2" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/DealList_btn2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#00ffffff" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DealList_list"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:numColumns="2"
+        android:choiceMode="none" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="vertical" android:weightSum="1.0"
+    android:background="#000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.46"
+        android:id="@+id/main_head">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/main_scoreImage">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp"
+            android:id="@+id/main_ImageId"></LinearLayout>
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/main_btns"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/setting" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.54">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/main_logo"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo2"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:id="@+id/main_btn1"
+                android:background="@drawable/main_btn1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:id="@+id/main_btn3"
+                android:background="@drawable/main_btn3"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

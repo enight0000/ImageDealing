@@ -1,0 +1,9 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="btn_show">#ff7d7dff</color>
+    <color name="btn_bg">#ff9d9e9d</color>
+    <color name="btn_bg1">#ff9d9e9d</color>
+</resources>

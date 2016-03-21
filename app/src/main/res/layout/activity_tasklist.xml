@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kexincom.cbpm.TaskListActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:id="@+id/relativeLayout"
+        android:background="@android:color/black"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+        <ImageButton
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:id="@+id/TaskList_btn1"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="281dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="展示列表"
+            android:id="@+id/TaskList_text"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/TaskList_btn2"
+            android:layout_toRightOf="@+id/TaskList_btn1"
+            android:layout_toEndOf="@+id/TaskList_btn1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:id="@+id/TaskList_btn2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/setting" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TaskList_list"
+        android:numColumns="1"
+        android:choiceMode="none"
+        android:layout_below="@+id/relativeLayout" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">图像处理专家</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_task_list">TaskListActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_task_count_num">TaskCountNumActivity</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_deal_list">DealListActivity</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+</resources>
